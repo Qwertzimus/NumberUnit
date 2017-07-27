@@ -1,0 +1,11 @@
+target
+nppBackup
+.project
+.settings
+.classpath
+.idea
+.iml
+.git
+*.iml
+*.asv
+*.mat
