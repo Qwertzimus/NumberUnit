@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/EmbeddedMontiArc/NumberUnit.svg?branch=master)](https://travis-ci.org/EmbeddedMontiArc/NumberUnit)
+
 # NumberUnit
 
 Support for Numbers with Units:
