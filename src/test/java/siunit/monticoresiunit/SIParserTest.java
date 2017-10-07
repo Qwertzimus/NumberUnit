@@ -228,4 +228,22 @@ public class SIParserTest {
         System.out.println(ast.getUnitNumber().get().getUnit());
     }
 
+    @Test
+    public void testDegree() throws IOException{
+        SIParser parser = new SIParser();
+        ASTUnitNumber ast = parser.parseString_UnitNumber("-90 °").orElse(null);
+        assertNotNull(ast);
+        System.out.println(ast);
+
+    }
+
+    @Test
+    public void testDegree2() throws IOException{
+        SIParser parser = new SIParser();
+        ASTUnitNumber ast = parser.parseString_UnitNumber("-90 deg").orElse(null);
+        assertNotNull(ast);
+        System.out.println(ast);
+
+    }
+
 }
