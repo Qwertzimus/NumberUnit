@@ -3,6 +3,6 @@ install:
 - git clone "https://github.com/EmbeddedMontiArc/external-dependencies" "$HOME/.m2/repository"
 
 script:
-- mvn clean install --settings "./external-dependencies/settings.xml"
+- mvn clean install --settings "./settings.xml"
 after_success:
-- mvn deploy --settings "./external-dependencies/settings.xml"
+- mvn deploy --settings "./settings.xml"
