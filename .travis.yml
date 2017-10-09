@@ -5,4 +5,4 @@ install:
 script:
 - mvn clean install --settings "./settings.xml"
 after_success:
-- mvn deploy --settings "./settings.xml"
+- mvn deploy --debug --settings "./settings.xml"
