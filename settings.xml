@@ -282,6 +282,12 @@ under the License.
           <snapshots><enabled /></snapshots>
         </repository>
 		<repository>
+          <id>eclipse</id>
+          <url>https://repo.eclipse.org/content/groups/releases/</url>
+          <releases><enabled /></releases>
+          <snapshots><enabled /></snapshots>
+        </repository>
+		<repository>
           <id>topobyte</id>
           <url>http://mvn.topobyte.de/</url>
           <releases><enabled /></releases>
