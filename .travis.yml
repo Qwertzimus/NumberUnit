@@ -1,7 +1,7 @@
 install:
 - rm -r -f "$HOME/.m2/repository"
 - git clone "https://github.com/EmbeddedMontiArc/external-dependencies" "$HOME/.m2/repository"
-- mvn dependency:go-offline
+
 script:
 - mvn clean install --settings "./external-dependencies/settings.xml"
 after_success:
