@@ -157,15 +157,15 @@
       <plugin>
         <groupId>com.github.github</groupId>
         <artifactId>site-maven-plugin</artifactId>
-        <version>0.11</version>
+        <version>0.12</version>
         <configuration>
-          <message>Maven artifacts for ${project.version}</message>  <!-- git commit message -->
+          <message>Maven artifacts for ${project.version} ${project.artifactId}}</message>  <!-- git commit message -->
           <noJekyll>true</noJekyll>                                  <!-- disable webpage processing -->
           <outputDirectory>${project.build.directory}/external-dependencies</outputDirectory> <!-- matches distribution management repository url above -->
-          <branch>refs/heads/external-dependencies</branch>                       <!-- remote branch name -->
+          <branch>refs/heads/master</branch>                       <!-- remote branch name -->
           <includes><include>**/*</include></includes>
           <repositoryName>external-dependencies</repositoryName>      <!-- github repo name -->
-          <repositoryOwner>ci-se</repositoryOwner>    <!-- github username  -->
+          <repositoryOwner>EmbeddedMontiArc</repositoryOwner>    <!-- github username  -->
         </configuration>
         <executions>
           <!-- run site-maven-plugin's 'site' target as part of the build's normal 'deploy' phase -->

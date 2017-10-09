@@ -130,7 +130,7 @@
      <server>
       <id>github</id>
       <username>travisbuilduser</username>
-      <password>${env.cisepassword}</password>
+      <password>${env.travisbuilduserpassword}</password>
     </server>
 	
     
