@@ -5,4 +5,4 @@ install:
 script:
 - mvn clean install --settings "./external-dependencies/settings.xml"
 after_success:
-- mvn deploy --settings --settings "./external-dependencies/settings.xml"
+- mvn deploy --settings "./external-dependencies/settings.xml"
