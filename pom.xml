@@ -141,8 +141,12 @@
     </dependency>
 
   </dependencies>
-  
 
+  <scm>
+    <url>https://github.com/EmbeddedMontiArc/NumberUnit.git</url>
+    <connection>scm:git:git@github.com:EmbeddedMontiArc/NumberUnit.git</connection>
+    <developerConnection>scm:git:git@github.com:EmbeddedMontiArc/NumberUnit.git</developerConnection>
+  </scm>
   <!-- == PROJECT BUILD SETTINGS =========================================== -->
 
   <build>
@@ -159,7 +163,8 @@
         <artifactId>site-maven-plugin</artifactId>
         <version>0.12</version>
         <configuration>
-          <message>Maven artifacts for ${project.version} ${project.artifactId}}</message>  <!-- git commit message -->
+          <server>github</server>
+          <message>Maven artifacts for ${project.version} ${project.artifactId}</message>  <!-- git commit message -->
           <noJekyll>true</noJekyll>                                  <!-- disable webpage processing -->
           <outputDirectory>${project.build.directory}/external-dependencies</outputDirectory> <!-- matches distribution management repository url above -->
           <branch>refs/heads/master</branch>                       <!-- remote branch name -->
