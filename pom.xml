@@ -142,11 +142,7 @@
 
   </dependencies>
 
-  <scm>
-    <url>https://github.com/EmbeddedMontiArc/NumberUnit.git</url>
-    <connection>scm:git:git@github.com:EmbeddedMontiArc/NumberUnit.git</connection>
-    <developerConnection>scm:git:git@github.com:EmbeddedMontiArc/NumberUnit.git</developerConnection>
-  </scm>
+
   <!-- == PROJECT BUILD SETTINGS =========================================== -->
 
   <build>
@@ -171,6 +167,7 @@
           <includes><include>**/*</include></includes>
           <repositoryName>external-dependencies</repositoryName>      <!-- github repo name -->
           <repositoryOwner>EmbeddedMontiArc</repositoryOwner>    <!-- github username  -->
+          <merge>true</merge>
         </configuration>
         <executions>
           <!-- run site-maven-plugin's 'site' target as part of the build's normal 'deploy' phase -->
