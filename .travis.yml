@@ -13,7 +13,7 @@ install:
 - git clone "https://github.com/EmbeddedMontiArc/external-dependencies" "$HOME/.m2/repository"
 
 script:
-- bundle exec rspec
+- bundle exec rake
 - mvn clean install --settings "./settings.xml"
 after_success:
 - mvn deploy --debug --settings "./settings.xml"
