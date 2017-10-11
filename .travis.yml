@@ -1,6 +1,3 @@
-env:
-  global:
-    - CC_TEST_REPORTER_ID=3fa38310293a9b102fbbae86652340c2770749314914f94d8b919c26fd246be0
 language: ruby
 rvm:
   - 2.2.0
@@ -16,6 +13,7 @@ install:
 - git clone "https://github.com/EmbeddedMontiArc/external-dependencies" "$HOME/.m2/repository"
 
 script:
+- bundle exec rspec
 - mvn clean install --settings "./settings.xml"
 after_success:
 - mvn deploy --debug --settings "./settings.xml"
