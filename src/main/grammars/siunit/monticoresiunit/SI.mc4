@@ -183,9 +183,9 @@ grammar SI {
     "min" | // minute
     "h" | // hour
     "d" | // day
-    // ToDo: fix escapeing
+    "°" | // degree
+	// ToDo: fix escapeing
     /*
-    "\\°" | // degree
     "\\'" | // minute
     "\\"" | // second
     */

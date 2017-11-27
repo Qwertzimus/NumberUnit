@@ -18,7 +18,7 @@
  *  License along with this project. If not, see <http://www.gnu.org/licenses/>.
  * *******************************************************************************
  */
-package de.monticore.lang.montiarc;
+package siunit.monticoresiunit;
 
 import siunit.monticoresiunit.si._ast.ASTComplexNumber;
 import siunit.monticoresiunit.si._ast.ASTNumber;
@@ -55,6 +55,13 @@ public class SIParserTest {
     public void clear() {
         Log.getFindings().clear();
     }
+	
+	@Test
+    public void testDegree20() throws IOException {
+        SIParser parser = new SIParser();
+        ASTNumber ast = parser.parse_String("7°").orElse(null);
+        assertNotNull(ast);
+	}
 
     @Test
     public void testM2() throws IOException {
