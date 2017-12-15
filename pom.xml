@@ -181,11 +181,16 @@
           </execution>
         </executions>
       </plugin>
+      
       <!-- MontiCore Generation -->
       <plugin>
         <groupId>de.monticore.mojo</groupId>
         <artifactId>monticore-maven-plugin</artifactId>
         <version>${monticore.plugin}</version>
+        <configuration>
+          <skip>false</skip>
+          <script>de/monticore/monticore_noemf.groovy</script>
+        </configuration>
         <executions>
           <execution>
             <goals>
