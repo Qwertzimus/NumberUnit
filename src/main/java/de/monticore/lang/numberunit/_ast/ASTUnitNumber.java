@@ -18,10 +18,10 @@
  *  License along with this project. If not, see <http://www.gnu.org/licenses/>.
  * *******************************************************************************
  */
-package siunit.monticoresiunit.si._ast;
+package de.monticore.lang.numberunit._ast;
 
+import de.monticore.lang.numberunit.Rationals;
 import de.se_rwth.commons.logging.Log;
-import siunit.monticoresiunit.si.Rationals;
 import org.jscience.mathematics.number.Rational;
 import org.jscience.physics.amount.Amount;
 

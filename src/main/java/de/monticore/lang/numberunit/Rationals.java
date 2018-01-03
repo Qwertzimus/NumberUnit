@@ -18,7 +18,7 @@
  *  License along with this project. If not, see <http://www.gnu.org/licenses/>.
  * *******************************************************************************
  */
-package siunit.monticoresiunit.si;
+package de.monticore.lang.numberunit;
 
 import org.jscience.mathematics.number.Rational;
 

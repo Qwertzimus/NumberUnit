@@ -35,13 +35,13 @@
  *  can be written as 3er groups, e.g. "12'345'678" ("12345678" would be also allowed) */
 /***************************************************************************************/
 
-package siunit.monticoresiunit;
+package de.monticore.lang;
 
 /**
  * Grammar does not use Literals, since we do not want to have 6
  * different ASTs for numbers
  */
-grammar SI {
+grammar NumberUnit {
 
   // we use here no interface mechanism to make the node final
   // it should not be extended by another grammar later on
