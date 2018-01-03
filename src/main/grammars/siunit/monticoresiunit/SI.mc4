@@ -145,7 +145,7 @@ grammar SI {
      "cwt" | // hundredweight
      // "t" | // imperial ton // conflict with metric tonne
      "slug" | // slug
-     "°F"  // degree Fahrenheit
+     "\u00B0F"  // degree Fahrenheit
 
   ;
 
@@ -183,7 +183,7 @@ grammar SI {
     "min" | // minute
     "h" | // hour
     "d" | // day
-    "°" | // degree
+    "\u00B0" | // degree
 	// ToDo: fix escapeing
     /*
     "\\'" | // minute
@@ -229,7 +229,7 @@ grammar SI {
     "Wb" | // weber
     "T" | // tesla
     "H" | // henry
-    "°C" | // degree Celsius
+    "\u00B0C" | // degree Celsius
     "lm" | // lumen
     "lx" | // lux
     "Bq" | // becquerel

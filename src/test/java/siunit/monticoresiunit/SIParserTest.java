@@ -61,6 +61,10 @@ public class SIParserTest {
         SIParser parser = new SIParser();
         ASTNumber ast = parser.parse_String("7°").orElse(null);
         assertNotNull(ast);
+        ast = parser.parse_String("-9°C").orElse(null);
+        assertNotNull(ast);
+        assertEquals(Rational.valueOf(-9,1), ast.getUnitNumber().get().getNumber().get());
+        assertEquals(Unit.valueOf("°C"), ast.getUnitNumber().get().getUnit().get());
 	}
 
     @Test
