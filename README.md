@@ -4,6 +4,14 @@
 [![Coverage Status](https://coveralls.io/repos/github/EmbeddedMontiArc/NumberUnit/badge.svg?branch=master)](https://coveralls.io/github/EmbeddedMontiArc/NumberUnit?branch=master)
 # NumberUnit
 
+**NumberUnit goes further and is in the moving process to become a MontiCore standard grammar.**
+
+Therefore, a new version is under test in OCL: https://github.com/MontiCore/OCL/blob/master/src/main/grammars/ocl/monticoreocl/OCL.mc4
+
+No pull-requests for this grammar will be done in the next 3 weeks. Pull requests will be confirmed after the grammar moved to the new MontiCore version 4.5.5
+
+
+
 Support for Numbers with Units:
 * 5 m/s^2
 * 7/3 N
