@@ -7,6 +7,7 @@
 **NumberUnit goes further and is in the moving process to become a MontiCore standard grammar.**
 
 Therefore, a new version is under test in OCL: https://github.com/MontiCore/OCL/blob/master/src/main/grammars/de/monticore/NumberUnit.mc4
+The new version does not introduce tokens anymore and is compatible with the standard MontiCore grammars Type and Literals.
 
 No pull-requests for this grammar will be done in the next 3 weeks. Pull requests will be confirmed after the grammar moved to the new MontiCore version 4.5.5
 
