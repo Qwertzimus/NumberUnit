@@ -235,7 +235,11 @@ grammar NumberUnit {
     "Bq" | // becquerel
     "Gy" | // gray
     "Sv" | // sievert
-    "kat"  // katal
+    "kat"| // katal
+    
+    //Other Units
+    "bit"| //units of information
+    "Byte"
   ;
 
   // see https://en.wikipedia.org/wiki/SI_derived_unit
